@@ -16,4 +16,9 @@ RUN npm install
 COPY . .
 
 EXPOSE 8080
+
+# also can use this:
+#   CMD ["npm", "start"]
+# it will call the "start" which defined from package.json
+
 CMD [ "node", "server.js" ]
